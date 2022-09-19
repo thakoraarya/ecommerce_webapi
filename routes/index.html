@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap link css -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>home page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: Lucida Sans;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 5vw;
+        }
+        
+        h4 {
+            font-size: 2vw;
+        }
+        
+        .container {
+            width: 100;
+            height: fit-content;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3%;
+        }
+        
+        .prdct-shelf {
+            margin: 3%;
+            background-color: rgb(255, 255, 255);
+            width: 95%;
+            height: 50vh;
+        }
+        
+        .prdct-cards {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2%;
+            height: 100%;
+        }
+        
+        .prdct-card {
+            width: 20%;
+            height: 40vh;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .prdct-card:hover {
+            /* width: 21%;
+            height: 41vh; */
+            transition: all .1s ease-in-out;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .prdct-img {
+            width: 100%;
+            height: 70%;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .prdct-name {
+            width: 100%;
+            height: 10%;
+            background-color: rgb(161, 244, 255);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .add-to-cart {
+            width: 100%;
+            height: 20%;
+            background-color: rgb(255, 165, 165);
+            border-radius: 0 0 10px 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: darkgreen;
+            font-size: 3vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>this is home page</h1>
+        <h4>welcome user:</h4>
+    </header>
+
+    <div class="container">
+        <div class="prdct-shelf">
+            <div class="prdct-cards">
+                <div class="prdct-card">
+                    <div class="prdct-img"> </div>
+                    <div class="prdct-name"><span>product name</span></div>
+                    <div class="add-to-cart"><span>product name</span></div>
+                </div>
+
+                <div class="prdct-card">
+                    <div class="prdct-img"> </div>
+                    <div class="prdct-name"><span>product name</span></div>
+                    <div class="add-to-cart"><span>product name</span></div>
+                </div>
+
+                <div class="prdct-card">
+                    <div class="prdct-img"> </div>
+                    <div class="prdct-name"><span>product name</span></div>
+                    <div class="add-to-cart"><span>product name</span></div>
+                </div>
+
+                <div class="prdct-card">
+                    <div class="prdct-img"> </div>
+                    <div class="prdct-name"><span>product name</span></div>
+                    <div class="add-to-cart"><span>product name</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

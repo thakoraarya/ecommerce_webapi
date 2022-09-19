@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login Page </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #06bbcc;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        button {
+            background-color: #677eff;
+            width: 100%;
+            color: white;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        form {
+            padding: 10px 50px;
+            background-color: white;
+            width: 400px;
+            /* height: 350px; */
+        }
+        
+        p {
+            text-align: center;
+            color: gray;
+            font-size: 25px;
+        }
+        
+        input[type=mail],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid rgb(245, 245, 245);
+            box-sizing: border-box;
+        }
+        
+        button:hover {
+            opacity: 0.7;
+        }
+        
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/api/auth/login" method="post" role="form">
+            <p> Student Login Form </p>
+            <label>Email : </label>
+            <input type="mail" placeholder="Enter Email Id" name="email" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+<!-- <script src="index.js" type="text/javascript"></script> -->
+</script>
+
+</html>
